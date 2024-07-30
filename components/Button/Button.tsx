@@ -7,5 +7,9 @@ export type ButtonProps = {
 }
 
 export const Button: FC<ButtonProps> = ({ label, onPress }) => {
-  return <TButton onPress={onPress}>{label}</TButton>
+  return (
+    <TButton testID='ButtonID' onPress={onPress}>
+      {label}
+    </TButton>
+  )
 }
